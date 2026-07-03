@@ -6,6 +6,8 @@
     <title>main</title>
     <style>
         body {
+            flex-direction: column;
+            gap: 1px;
             background: linear-gradient(#5781d5, #90aadb);
             /* Erases default browser spacing and makes body fill the whole screen */
             margin: 0;
@@ -16,7 +18,16 @@
             justify-content: center;
             align-items: center;
         }
-
+        .bffs{
+            display: block;
+            margin: 20px;
+            border: 3px solid #89CFF0;
+            width: 20%;
+            height:50%;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
         button {
             /* Erases the default white/gray button background and borders */
             background: none;
@@ -40,16 +51,20 @@
             display: block;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-
-        
         a:hover {
             transform: scale(1.05);
             background: #466dbb;
         }
+        @media (max-width: 650px){
+            .bffs{
+                width: 40%;          
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
-
+<img class="bffs" src="friends.jpeg" alt="friends">
     <button>
         <a class="view" href="eyel.html">CLICK HERE</a>
     </button>
